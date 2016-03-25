@@ -24,6 +24,10 @@ angular
         redirectTo: '/'
       });
   })
+  .run(function($rootScope, Page) {
+    // Provide Page service to the views
+    $rootScope.Page = Page;
+  })
   .run(function() {
 
   });
